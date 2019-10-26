@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .pink,
+    .blue,
+    .orange,
+    .purple {
+      /* Solución */
+      position: absolute;
+    }
+
+    .pink {
+      /* -------> ingresar código <---------- */
+      top: 70px;
+      left: 70px;
+      background: rgb(239, 71, 111);
+    }
+
+    .blue {
+      /* -------> ingresar código <---------- */
+      top: 25px;
+      background: rgb(17, 138, 178);
+    }
+
+    .green {
+      background: rgb(6, 214, 160);
+      /* Solución */
+      position: absolute;
+      top: 0;
+      z-index: -10;
+    }
+
+    .orange,
+    .blue {
+      height: 100px;
+      width: 100px;
+      font-size: 14px;
+    }
+
+    .orange {
+      /* -------> ingresar código <---------- */
+      background: rgb(255, 209, 102);
+      top: 45px;
+      left: 20px;
+    }
+
+    .purple {
+      /* -------> ingresar código <---------- */
+      background: rgb(139, 91, 211);
+      top: 40px;
+      left: 40px;
+    }
+
+    div {
+      color: white;
+      font-family: "Courier New", Courier, monospace;
+      text-align: right;
+      padding: 5px;
+      box-sizing: border-box;
+      height: 150px;
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pink">
+    pink
+    <div class="orange">
+      orange
+    </div>
+  </div>
+  <div class="blue">
+    blue
+  </div>
+  <div class="green">
+    green
+  </div>
+</body>
+</html>

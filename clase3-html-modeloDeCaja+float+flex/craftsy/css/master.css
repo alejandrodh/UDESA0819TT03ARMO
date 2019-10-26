@@ -1,0 +1,67 @@
+/* Estilos principales */
+
+/* Configuraciones y reseteos generales para todos los proyectos */
+*{
+  box-sizing: border-box;
+}
+ul, ol{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* Fondo */
+body{
+  background-image: url("../materiales/img/bg-2.png");
+  width: 1140px;
+  margin: 0 auto; /* Centrar un bloque */
+}
+
+/* Cabecera */
+header{
+background: rgb(239, 76, 39);
+padding: 5px 10px;
+margin-bottom: 20px;
+/* Flex */
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
+}
+
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+nav img{
+  margin-right: 20px;
+}
+header ul{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+header li{
+  margin-right: 20px;
+}
+header a{
+  color: #fff;
+  text-transform:uppercase;
+}
+
+
+
+
+
+
+
+/**/

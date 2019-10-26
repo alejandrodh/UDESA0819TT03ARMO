@@ -1,0 +1,21 @@
+/* Estilos position */
+.article-wrapper{
+  background-color:#ccc;
+  position: relative;
+}
+article{
+  width: 200px;
+  height: 200px;
+}
+.uno{
+  background-color: rgba(255, 0, 0, 1);
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+.dos{
+  background-color: rgba(0, 255, 0, 1);
+}
+.tres {
+  background-color: rgba(0, 0, 255, 1);
+}

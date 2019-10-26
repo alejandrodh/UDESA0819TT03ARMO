@@ -1,0 +1,54 @@
+article {
+  position: relative;
+}
+.textos{
+  position: relative;
+  right: -390px;
+  bottom: 300px;
+  background: rgba(255,255,255, 0.5);
+}
+article h2{
+  color: red;
+}
+article h2:hover{
+  font-size: 40px;
+}
+.textos p{
+  display: none;
+}
+.textos:hover p{
+  color: blue;
+  font-size: 30px;
+  display: block;
+}
+.textos:hover{
+  background-color: rgba(0, 255, 255, 0.8);
+}
+.avengersAssemble{
+  display: flex;
+  /* flex-direction: row */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.avengers {
+  width: 30%;
+}
+.avengers img{
+  width: 100%;
+}
+
+/* Completar la mediaquery para que modifique a los elementos en una medida menor a 585px */
+@media(max-width:585px) {
+  .textos{
+    right:0  /* SOLO LO QUE QUEREMOS CAMBIAR */
+  }
+  .textos h2{
+    color: blue;
+  }
+  .avengersAssemble{
+    flex-direction: column;
+  }
+  .avengers{
+    width: 100%;
+  }
+}

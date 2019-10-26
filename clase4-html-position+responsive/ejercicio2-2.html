@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .positioned {
+
+      /* -------> ingresar código <----------*/
+
+    }
+
+    .pink {
+      top: 40px;
+      left: 40px;
+      background: rgb(239, 71, 111);
+      /* Solución */
+      position: absolute;
+      z-index: auto;
+    }
+
+    .blue {
+      top: 80px;
+      left: 80px;
+      background: rgb(17, 138, 178);
+      /* Solución */
+      position: absolute;
+    }
+
+    .green {
+      background: rgb(6, 214, 160);
+      /* Solución */
+      position: absolute;
+      top:0;
+      z-index: -10;
+    }
+
+    .blue,
+    .green,
+    .pink {
+      height: 150px;
+      width: 150px;
+    }
+
+    .orange {
+      height: 100px;
+      width: 100px;
+      background: rgb(255, 209, 102);
+      font-size: 14px;
+      /* Solución */
+      position: absolute;
+      z-index: 999;
+    }
+
+    div {
+      color: white;
+      font-family: "Courier New", Courier, monospace;
+      text-align: right;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="pink">
+    pink
+    <div class="orange">
+      orange
+    </div>
+  </div>
+  <div class="blue">
+    blue
+  </div>
+  <div class="green">
+    green
+  </div>
+
+</body>
+</html>

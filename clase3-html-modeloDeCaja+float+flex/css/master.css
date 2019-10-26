@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+}
+.wrapper{
+  overflow: hidden;
+  background-color: #ccc;
+}
+article{
+  float: left;
+  width: 30%;
+}
+
+.hero{
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.first{
+  background-color: rgba(0, 255, 0, 0.5);
+}
+.second{
+ background-color: rgba(0, 0, 255, 0.5);
+}
+.flexbox{
+  background-color:#aaa;
+  display: flex;
+}
+div{
+  width: 300px;
+}

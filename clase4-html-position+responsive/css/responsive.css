@@ -1,0 +1,51 @@
+/* Estilos responsive */
+.article-wrapper{
+  background-color:#ccc;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+article{
+  width: 200px;
+  height: 200px;
+
+}
+.uno{
+  background-color: rgba(255, 0, 0, 1);
+
+}
+.dos{
+  background-color: rgba(0, 255, 0, 1);
+}
+.tres {
+  background-color: rgba(0, 0, 255, 1);
+}
+
+/* @media (max-width:480px) {
+  .article-wrapper{
+    background-color: #fff;
+  }
+  .article-wrapper{
+    flex-direction: column;
+  }
+} */
+@media (min-width:480px) {
+ .article-wrapper{
+   flex-direction: row;
+   justify-content: space-between;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+/**/

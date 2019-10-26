@@ -1,0 +1,469 @@
+/****** CSS GENERAL ******/
+
+/* importo desde google la fuente */
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+/* me aseguro que los elementos tengan el ancho que seteo */
+*{box-sizing: border-box;}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Russo One;
+	font-size: 1rem;
+}
+.color-white {
+	color: white;
+}
+.color-gray {
+	color: gray;
+}
+.color-green {
+	color: #97dc3e;
+}
+.background-orange {
+	background-color: orange;
+}
+button.cool-button {
+	font-size: 1.5rem;
+	padding: 12px 20px;
+	background-color: #97dc3e;
+	color: white;
+	border: solid 2px white;
+	border-radius: 40px;
+}
+button.cool-button:hover {
+	background-color: white;
+	color: #97dc3e;
+}
+button.button-main {
+	position: relative;
+	top: -55vh;
+	float: right;
+}
+input {
+	border-radius: 45px;
+	padding: 10px;
+}
+/****** CSS GENERAL ******/
+
+/* HEADER */
+header nav {
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+  	z-index: 9;
+}
+nav {
+  	overflow: hidden;
+}
+nav ul {
+  	margin: 0;
+  	padding: 0;
+  	text-align: center;
+}
+nav ul.ul-logo {
+  	float: left;
+}
+nav ul.ul-menu {
+  	float: right;
+}
+nav ul li {
+	margin: 0;
+	padding: 15px 12px 0 12px;
+	float: left;
+	list-style-type: none;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	height: 60px;
+}
+nav ul li.logo {
+	background-image: url(../img/dh.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 150px;
+}
+nav ul.ul-menu {
+	margin-left:0;
+}
+nav ul li a {
+	text-decoration: none;
+}
+nav ul li a:hover {
+	text-decoration: underline;
+}
+/* HEADER */
+
+/* SECTION HOME */
+main section {
+	text-align: center;
+}
+main section.home {
+	padding-top: 100px;
+	padding-left: 10%;
+	padding-right: 10%;
+	background-color: #97dc3e;
+	max-height: 680px;
+	overflow:hidden;
+}
+section.home img {
+	width: 100%;
+	max-width: 600px;
+}
+/* INICIO DE PISTA 1.3) POSICIONAMIENTO */
+/* completa el codigo dentro de los selectores ya creados! */
+section.home {
+
+}
+section.home .div-makeitreal {
+	position: relative;
+	top: -232px;
+	z-index: 30;
+}
+section.home .div-create {
+	position: relative;
+	top:-400px;
+	z-index: 10;
+
+}
+section.home .div-zapas {
+	position: relative;
+	top:120px;
+	z-index: 20;
+
+}
+section button.cool-button {
+	position: relative;
+	top: -268px;
+	z-index: 999;
+
+}
+/* FIN DE PISTA 1.3) POSICIONAMIENTO */
+/* SECTION HOME */
+
+/* SECTION WHAT WE DO */
+section.section-whatWeDo {
+	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+article.article-whatWeDo {
+	padding: 20px;
+	text-align: center;
+}
+article.article-whatWeDo img {
+	padding: 5px;
+	width: 100px;
+	border-radius: 50%;
+}
+article.article-whatWeDo h2 {
+	opacity: 0;
+	margin: 0;
+}
+article.article-whatWeDo p {
+	max-width: 250px;
+	margin-top: 0;
+	padding: 0 20px;
+}
+/* INICIO DE PISTA 2.1) PSEUDOSELLECTORES */
+/* para resolver este punto debes escribir el selector */
+
+ .article-whatWeDo:hover {
+	border: solid 1px gray;
+	border-radius: 50%;
+}
+
+/* FIN DE PISTA 2.1) PSEUDOSELLECTORES */
+
+/* INICIO DE PISTA 2.2) PSEUDOSELLECTORES */
+/* para resolver este punto debes escribir el selector */
+
+ .article-whatWeDo:hover h2 {
+  	opacity: 1;
+}
+
+/* FIN DE PISTA 2.2) PSEUDOSELLECTORES */
+/* SECTION WHAT WE DO */
+
+/* SECTION PRODUCTS */
+section.section-products {
+	padding: 5% 0;
+	background-image:linear-gradient(to bottom,rgb(206, 209, 208),#97dc3e);
+}
+section.section-products h2.subtitle-products {
+	font-size: 2.5rem;
+}
+
+/* INICIO DE PISTA 4) ESTILO */
+/* deberas agregar/modificar/eliminar lo que consideres necesario! */
+
+section.section-products h2.title-product {
+	font-size: 1.5rem;
+	font-weight: lighter;
+	/* font-family: serif; */
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 30px;
+}
+
+
+
+
+/* FIN DE PISTA 4) ESTILO */
+
+/* INICIO DE PISTA 3.3) FLEXBOX */
+section.section-products div.container-products {
+
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+section.section-products article.article-products {
+	width: 30%;
+}
+/* FIN DE PISTA 3.3) FLEXBOX */
+
+section.section-products img {
+  	max-width: 100%;
+}
+/* SECTION PRODUCTS */
+
+/* SECTION CONTACT */
+section.section-contact {
+	background-image: url(../img/athletic-woman.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+ }
+section.section-contact h2 {
+	margin-top: 0;
+	padding-top: 50px;
+	text-align: center;
+}
+section form.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding-bottom: 100px;
+}
+section form.contact-form input,
+section form.contact-form select,
+section form.contact-form textarea {
+	border-radius: 50px;
+}
+section form.contact-form input {
+	margin-top: 5px;
+	width: 50%;
+}
+section form.contact-form select {
+	width: 50%;
+	height: 45px;
+	margin-top: 5px;
+	text-align-last: center;
+}
+section form.contact-form textarea {
+	padding: 10px 25px;
+}
+section form.contact-form div label {
+	color: white;
+	margin-bottom: 5px;
+}
+section form.contact-form div.checkbox,
+section form.contact-form div.radio-button {
+	display: flex;
+	align-items: center;
+	margin: 20px auto;
+}
+/* SECTION CONTACT */
+
+/* FOOTER */
+footer{
+	padding: 25px;
+	overflow: hidden;
+}
+footer ul.ul-menu {
+	float: right;
+	padding: 0;
+}
+footer ul li {
+	margin: 0;
+	padding: 15px 12px 0 12px;
+	float: left;
+	list-style-type: none;
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+footer ul li a{
+	text-decoration: none;
+}
+footer ul li a:hover {
+	text-decoration: underline;
+}
+footer div.copyright {
+	float: left;
+}
+/* FOOTER */
+
+/****** MEDIA QUERIES ******/
+/* TABLET - MEDIA QUERIES */
+@media (min-width: 451px) and (max-width: 850px) {
+	/* HEADER */
+	nav ul.ul-menu {
+		display: none;
+	}
+	/*  HEADER */
+
+	/* SECTION HOME */
+	section.home {
+		max-width: 100vw;
+	}
+	section.home img {
+		width: 400px;
+	}
+	/* INICIO DE PISTA 1.2) POSICIONAMIENTO */
+	/* completa el codigo dentro de los selectores ya creados! */
+	section.home .div-zapas {
+		position: relative;
+		top: 82px;
+		z-index: 20;
+	}
+	section.home .div-create {
+		position: relative;
+		top: -268px;
+		z-index: 10;
+	}
+	section.home .div-makeitreal {
+		position: relative;
+		top: -152px;
+		z-index: 20;
+
+	}
+	section.home button.cool-button {
+		position: relative;
+		top:-140px;
+		z-index: 999;
+	}
+	/* FIN DE PISTA 1.2) POSICIONAMIENTO */
+	/* SECTION HOME */
+
+	/* SECTION WHAT WE DO */
+	section.section-whatWeDo {
+		width: 80%;
+		margin: auto;
+	}
+	/* SECTION WHAT WE  DO */
+
+	/* SECTION PRODUCTS */
+	section.section-products div.container-products {
+		margin-left: 5%;
+	}
+	/* INICIO DE PISTA 3.2) FLEXBOX */
+	section.section-products article.article-products {
+
+	}
+	/* FIN DE PISTA 3.2) FLEXBOX */
+	/* SECTION PRODUCTS */
+
+	/* SECTION CONTACT */
+	section.section-contact h2 {
+		padding-top: 30px;
+	}
+	section form.contact-form input,
+	section form.contact-form select {
+		width: 80%;
+		height: 32px;
+	}
+	section.section-contact form textarea {
+		width: 80%;
+	}
+	/* SECTION CONTACT */
+
+	/* SECTION FOOTER */
+	footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	footer ul.ul-menu {
+		padding-left: 0px;
+	}
+	/* SECTION FOOTER */
+}
+/* TABLET - MEDIA QUERIES */
+
+/* MOBILE - MEDIA QUERIES */
+@media (max-width: 450px) {
+	/**** SECTION HOME ***/
+	section.home img {
+		width: 220px;
+	}
+	/* INICIO DE PISTA 1.1) POSICIONAMIENTO */
+	/* completa el codigo dentro de los selectores ya creados! */
+	section.home .div-zapas {
+		position: relative;
+	    top: 53px;
+	    z-index: 10;
+	}
+	section.home .div-makeitreal {
+		position: relative;
+    top: -71px;
+		z-index: 99;
+
+	}
+	section.home .div-create {
+
+		position: relative;
+    top: -144px;
+    z-index: 0;
+	}
+	section.home button.cool-button {
+
+		position: relative;
+    top: -31px;
+	}
+	/* FIN DE PISTA 1.1) POSICIONAMIENTO */
+	/* SECTION HOME */
+
+	/* SECTION PRODUCTS */
+
+	/* INICIO DE PISTA 3.1) FLEXBOX */
+  section.section-products article.article-products {
+		width: 100%;
+	}
+	/* FIN DE PISTA 3.1) FLEXBOX */
+
+	/* SECTION PRODUCTS ***/
+
+	/* SECTION CONTACT ***/
+	section form.contact-form input,
+	section form.contact-form select,
+	section.section-contact form textarea,
+	section form.contact-form div.checkbox,
+	section form.contact-form div.radio-button {
+		width: 90%;
+	}
+	section form.contact-form div.checkbox input,
+	section form.contact-form div.radio-button input {
+		width: 10%;
+	}
+	section form.contact-form div.checkbox label,
+	section form.contact-form div.radio-button label {
+		width: 90%;
+	}
+	/* SECTION CONTACT */
+
+	/* SECTION FOOTER */
+	footer ul li.li-menu {
+		width: 100%;
+		text-align: center;
+	}
+	/* SECTION FOOTER */
+}
+/* MOBILE - MEDIA QUERIES */
+/****** MEDIA QUERIES ******/

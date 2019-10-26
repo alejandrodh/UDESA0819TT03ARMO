@@ -1,0 +1,83 @@
+li{
+  list-style-type: none; /* Quita bullets de las listas*/
+}
+a{
+  color:#000; /* Define color */
+  text-decoration: none; /* Quita subrayado*/
+}
+
+body{
+  background-image: url(../img/emilia-home.jpg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position:top right;
+}
+h1{
+  background-color: rgba(255,255,255,0.5);
+  font-size: 80px;
+}
+h1, h2{
+  text-transform: uppercase;
+}
+h2{
+  line-height: 50px;
+  font-size: 50px;
+}
+.nav li{
+  font-size: 25px;
+}
+.nav a:hover{
+  color:red;
+}
+/* .nav li:nth-child(2) a{
+  color: blue;
+}
+.nav li:first-child a{
+  color: blue;
+}
+.nav li:last-child a{
+  color: blue;
+} */
+
+
+
+/* Más info de :nth-child
+https://developer.mozilla.org/es/docs/Web/CSS/:nth-child
+*/
+
+
+/* About */
+.about{
+  background-image: url(../img/emilia-about.jpg);
+}
+.about .nav{
+font-size: 20px;
+text-transform: uppercase;
+text-align: right;
+line-height: 50px;
+background-color: rgba(255,255,255,0.5)
+}
+.social{
+  text-align: right;
+}
+.about h1{
+  font-size: 50px;
+  background-color: transparent;
+}
+.about li:first-child{
+  color: green;
+  font-size: 30px;
+}
+.about li:last-child{
+  color: green;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/**/

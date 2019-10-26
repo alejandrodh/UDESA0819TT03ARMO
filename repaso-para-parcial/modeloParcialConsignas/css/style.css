@@ -1,0 +1,445 @@
+/* importo el tipo de fuente */
+@import url('https://fonts.googleapis.com/css?family=Poiret One');
+
+/* me aseguro que las medidas de los elementos, son las que defino */
+*{box-sizing: border-box;}
+
+body {
+  font-family: Poiret One;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header nav {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+  box-shadow: -2px -2px 5px gray, 2px 2px 5px gray;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+header nav ul.ul-logo {
+  float: left;
+  margin-top: -20px;
+}
+header nav ul.ul-menu {
+  margin-top: 20px;
+  float: right;
+  overflow: hidden;
+  width: 60%;
+}
+header ul li.li-logo img {
+  width: 100%;
+}
+header ul li {
+  list-style-type: none;
+}
+header ul li.li-menu{
+  float: left;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header a {
+  text-decoration: none;
+}
+
+main section.main {
+  background-image: url(../img/main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+main div h2 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+h2.subtitle1 {
+  font-size: 5rem;
+}
+h2.subtitle2 {
+  font-size: 4rem;
+}
+h2.subtitle3 {
+  font-size: 20rem;
+  font-weight: lighter;
+}
+
+/* INICIO 1) POSICIONAMIENTO */
+/* main div.main-titles {
+  text-align: center;
+
+}
+h2.subtitle4 {
+  font-size: 5rem;
+
+
+
+}
+h2.subtitle5 {
+
+
+
+}
+main section.main div button {
+  cursor:pointer;
+
+
+
+} */
+/* INICIO 1) POSICIONAMIENTO */
+
+main section.main article p {
+  width: 100%;
+}
+main section.main article img {
+  width: 100%;
+}
+
+main section.main div.areas-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.main div.areas-container article {
+  width: 45%;
+  height: 25vw;
+  margin: 0 2.5%;
+}
+main section div p.areas-title {
+  position: relative;
+  top: -65%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  opacity: 0;
+}
+
+/* INICIO 2.1) PSEUDOSELECTORES */
+/* ESCRIBIR AQUI {
+  opacity: 1;
+} */
+/* FIN 2.1) PSEUDOSELECTORES */
+
+main section.section-user article div img {
+  width: 100%;
+  max-width: 250px;
+}
+
+main section.products h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* INICIO 3) FLEXBOX */
+main section.products {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+section.products article {
+  width: 24.25%;
+}
+/* FIN 3) FLEXBOX */
+
+main section.products article img {
+  width: 100%;
+}
+
+section.section-division {
+  padding: 50px 1%;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* INICIO 4) ESTILO */
+section.section-division article.article-division {
+  float: left;
+  width: 23%;
+  /* borde */
+  /* borde redondeado */
+  margin: 0 1%;
+  /* color de fondo */
+  /* cursiva */
+  /* negrita */
+  /* tamaño de fuente */
+  /* padding */
+  text-align: left;
+}
+/* FIN 4) ESTILO */
+
+main section.contact {
+  padding: 10% 20%;
+  text-align: center;
+}
+main section.contact div.contact-title {
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  padding: 25px 0 50px 0;
+}
+main section.contact div img {
+  max-width: 50px;
+  float: left;
+  margin-left: 20vw;
+}
+main section.contact div h2 {
+  float: left;
+  padding: 10px;
+}
+
+/* INICIO 2.2) PSEUDOSELECTORES */
+/* ESCRIBIR AQUI {
+  text-decoration: underline;
+} */
+/* FIN 2.2) PSEUDOSELECTORES */
+
+main section.contact form input,
+main section.contact form select,
+main section.contact form div,
+main section.contact form textarea,
+main section.contact form button {
+  width: 100%;
+  margin-bottom: 2.5%;
+  cursor:pointer;
+  font-family: Poiret One;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-align-last: center;
+  text-align: center;
+  -ms-text-align-last: center;
+  -moz-text-align-last: center;
+}
+main section.contact form textarea {
+  padding: 10px;
+}
+main section.contact form button {
+  font-size: 1.5rem;
+}
+
+footer {
+  border-top: 1px solid gainsboro;
+  text-align: center;
+  height: 200px;
+}
+footer ul {
+  margin: 50px 15%;
+  padding: 0;
+  overflow: hidden;
+}
+footer ul li {
+  float: left;
+  width: 25%;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+footer a {
+  text-decoration: none;
+}
+footer ul li {
+  list-style-type: none;
+}
+footer div {
+  margin-top: 50px;
+}
+/* GENERAL */
+.color-white {
+  color: white;
+}
+.color-gold {
+  color: gold;
+}
+.color-gray {
+  color: gray;
+}
+.background-green {
+  background-color: green;
+}
+.background-red {
+  background-color: red;
+}
+.display-none {
+  display: none;
+}
+.button {
+  border: 1px solid gainsboro;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  background-color: rgb(242, 242, 234);
+}
+.button:hover {
+  background-color: transparent;
+  color: gray;
+  border: 1px solid gray;
+}
+section.js {
+  margin: 50px 0;
+  padding: 10px 0;
+}
+section.js h2.h2-js {
+  text-align: center;
+}
+/* GENERAL */
+
+/****** MEDIA QUERIES ******/
+/* INICIO MOBILE MEDIA QUERY */
+@media (max-width: 420px) {
+  header nav {
+    height: 25vw;
+    min-height: 60px;
+  }
+  header nav ul.ul-menu {
+    display: none;
+  }
+  header ul li.li-logo img {
+    margin-top: 2.5%;
+    min-width: 250px;
+  }
+  h2.subtitle1 {
+    font-size: 3rem;
+  }
+  h2.subtitle2 {
+    font-size: 2rem;
+  }
+  h2.subtitle3 {
+    font-size: 12rem;
+  }
+  h2.subtitle4 {
+    font-size: 5rem;
+    left: 47%;
+    top: 162px;
+  }
+  h2.subtitle5 {
+    left: 66%;
+    top: 192px;
+  }
+  main section.main div button {
+    left: 30%;
+    top: 260px;
+  }
+  main section.main div.areas-container {
+    display: none;
+  }
+  main section.section-user article {
+    overflow: none;
+  }
+  main section.section-user article div.img-user {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  main section.section-user article div.data-user {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+/* INICIO 6) MOBILE */
+  main section.products article {
+      width: 100%;
+  }
+/* FIN 6) MOBILE */
+
+  section.section-division article.article-division {
+    width: 98%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  main section.contact div img {
+    margin-left: 0;
+  }
+
+  main section.contact {
+    padding: 10% 1%;
+  }
+
+  footer ul.ul-menu {
+    justify-content: center;
+  }
+  footer li.li-menu {
+    float: none;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  footer li.li-menu a:hover {
+    text-decoration: underline;
+  }
+}
+/* FIN MOBILE MEDIA QUERY */
+
+/* INICIO TABLET MEDIA QUERY */
+@media (min-width: 421px) and (max-width: 800px){
+  nav ul.ul-menu {
+    display: none;
+  }
+  h2.subtitle1 {
+    font-size: 4rem;
+  }
+  h2.subtitle2 {
+    font-size: 2.5rem;
+  }
+  h2.subtitle4 {
+    left: 51%;
+    top: 260px;
+  }
+  h2.subtitle5 {
+    left: 64%;
+    top: 286px;
+  }
+  main section.main div button {
+    left: 65%;
+    top: 365px;
+  }
+
+/* INICIO 5) TABLET */
+  section.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  section.products article {
+    width: 48%;
+  }
+/* FIN 5) TABLET */
+
+  section.section-division article.article-division {
+    width: 48%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  main section.contact div img {
+    margin-left: 15vw;
+  }
+  footer ul.ul-menu {
+    justify-content: center;
+  }
+  footer li.li-menu {
+    float: none;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  footer li.li-menu a:hover {
+    text-decoration: underline;
+  }
+}
+/* INICIO TABLET MEDIA QUERY */
+/****** MEDIA QUERIES ******/
