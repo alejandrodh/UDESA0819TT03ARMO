@@ -65,7 +65,7 @@ fetch('https://api.giphy.com/v1/gifs/random?api_key=PuhlljnIs04eW2ezoSHpJ6Fov610
 
   })
 
-  //Traemos los gisg más vistos del endpoint que nos provee la API de Giphy.
+  //Traemos los gifsg más vistos del endpoint que nos provee la API de Giphy.
   var urlMasVistos = 'https://api.giphy.com/v1/gifs/trending?api_key=PuhlljnIs04eW2ezoSHpJ6Fov6102e4T&limit=5&rating=G'
 
   fetch(urlMasVistos)
