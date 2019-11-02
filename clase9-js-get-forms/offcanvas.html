@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+  </head>
+  <body>
+    <!-- This is a button toggling the off-canvas //AJV: lo cambié por font awesome ;-)-->
+    <!-- TODO: Darle estilo para que no quede pegado al borde izquierdo de la pantalla. -->
+     <i uk-toggle="target: #my-id" type="button" class="fas fa-bars fa-2x"></i>
+
+     <!-- This is an anchor toggling the off-canvas -->
+     <a href="#my-id" uk-toggle></a>
+
+     <!-- This is the off-canvas -->
+     <div id="my-id" uk-offcanvas>
+         <div class="uk-offcanvas-bar">
+
+             <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+         </div>
+     </div>
+     <!-- UIkit JS -->
+    <div class="contaier">
+      <h1>Un prueba para implementar <a href="https://getuikit.com/">UiKit</a> en el proyecto.</h1>
+      <p>Este html tiene el componente "offcanvas". Hacé click en las barras de la izquierda.</p>
+
+    </div>
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+  </body>
+</html>
